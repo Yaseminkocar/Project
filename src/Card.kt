@@ -4,4 +4,18 @@
     String[] Suit = {"Diamonds","Hearts","Spades","Clubs"}
 
 
-}
+     public static void deck(){
+
+         for (int i = 0; i < deck.length ; i++){
+
+         deck[i] = number[i % 13] + suit[i / 13];
+     }
+
+         System.out.println();
+     }
+
+
+
+
+     }
+
