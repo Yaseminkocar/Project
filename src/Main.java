@@ -22,7 +22,18 @@ public class Main {
 
             for (int j = 0; j< times ; j++){
 
-                int remaining = (sayi[j]%13 ) + 1;
+                int remaining = (sayi[j]%13 ) + 1; // this is a must for finding card's name
+
+                if(sayi[j] > 0 && sayi[j] <= 13){
+                    System.out.println("Clubs");
+                } else if ( sayi[j] > 13 && sayi[j] <= 26 ){
+                    System.out.println("Spades");
+                } else if (sayi[j] > 26 && sayi [j] <= 39){
+                    System.out.println("Diamonds");
+                }else {
+                    System.out.println("Hearts"); // I give names the cards. I divided them into 4 groups.
+                }
+
             }
 
     }
