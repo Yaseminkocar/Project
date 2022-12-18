@@ -5,7 +5,7 @@ public class Main {
 
         int times , number; // Variables which ı will use.
 
-        Shuffle game = new Shuffle // This shuffles the deck.
+        Shuffle() ; = new Shuffle()// This shuffles the deck.
 
         System.out.println("How many times the cards will be given");
 
@@ -18,7 +18,7 @@ public class Main {
         for (int i = 1 ; i<= times ; i++){
 
             System.out.println(i + ":");
-            int sayi[] = game.Shuffle(times);
+            int sayi[] = Shuffle(times);
 
             for (int j = 0; j< times ; j++){
 
@@ -34,10 +34,23 @@ public class Main {
                     System.out.println("Hearts"); // I give names the cards. I divided them into 4 groups.
                 }
 
+                if(remaining== 11 ) {
+                    System.out.println("jack");
+                }else if(remaining== 12 ){
+                    System.out.println("Kız");
+                }else if(remaining== 13){
+                    System.out.println("King");
+                }else{
+                    System.out.println(remaining);
+                    System.out.println(",");
+                }
+                   System.out.println(""); // this is for making a new line.
             }
 
     }
 }
+
+
 
 
 
