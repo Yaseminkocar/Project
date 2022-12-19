@@ -2,56 +2,20 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-
-        int times , number; // Variables which ı will use.
-
-        Shuffle() ; = new Shuffle()// This shuffles the deck.
-
-        System.out.println("How many times the cards will be given");
-
-        Scanner sc = new Scanner(System.in);
-        times = sc.nextInt();
-        System.out.println("How many cards will be given at one time?");
-        number = sc.nextInt();
-
-
-        for (int i = 1 ; i<= times ; i++){
-
-            System.out.println(i + ":");
-            int sayi[] = Shuffle(times);
-
-            for (int j = 0; j< times ; j++){
-
-                int remaining = (sayi[j]%13 ) + 1; // this is a must for finding card's name
-
-                if(sayi[j] > 0 && sayi[j] <= 13){
-                    System.out.println("Clubs");
-                } else if ( sayi[j] > 13 && sayi[j] <= 26 ){
-                    System.out.println("Spades");
-                } else if (sayi[j] > 26 && sayi [j] <= 39){
-                    System.out.println("Diamonds");
-                }else {
-                    System.out.println("Hearts"); // I give names the cards. I divided them into 4 groups.
-                }
-
-                if(remaining== 11 ) {
-                    System.out.println("jack");
-                }else if(remaining== 12 ){
-                    System.out.println("Kız");
-                }else if(remaining== 13){
-                    System.out.println("King");
-                }else{
-                    System.out.println(remaining);
-                    System.out.println(",");
-                }
-                   System.out.println(""); // this is for making a new line.
-            }
-
+        Card [] deck = new Card [52];
+        String[] suit = new String[0];
+        String[] number = new String[0];
+       int c=0;
+       for(int i = 0 ; i < suit.length; i++){
+           for(int j = 0; j<number.length ; j++) {
+           deck[c++] = new Card(suit [i] , number [j]);
+           }
+           
+       }
+    
+    
     }
-}
 
 
-
-
-
-}
+    
+       }
