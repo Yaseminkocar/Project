@@ -1,5 +1,5 @@
 
-public class Main {
+public class Main{
     public static void main(String[] args) {
         Card [] deck = new Card [52];
         String[] suit = new String[0];
@@ -11,6 +11,10 @@ public class Main {
        for(int i = 0 ; i < suit.length; i++){
            for(int j = 0; j<number.length ; j++) {
            deck[c++] = new Card(suit [i] , number [j]);
+           System.out.print(suit[i] + " ");
+           System.out.println(number[j]);
+
+
            }
            
        }
