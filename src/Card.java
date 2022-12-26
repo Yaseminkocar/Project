@@ -6,4 +6,9 @@ private String number;
         suit = i;
         number = j;
     }
+
+    @Override
+    public String toString() {
+        return suit + " " + number;
+    }
 }
